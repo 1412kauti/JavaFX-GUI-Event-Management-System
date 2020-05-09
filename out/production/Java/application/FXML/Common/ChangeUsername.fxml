@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="82.0" layoutY="70.0" text="New Username:" />
+      <JFXTextField layoutX="57.0" layoutY="106.0" />
+      <JFXButton fx:id="Close" layoutX="101.0" layoutY="172.0" onAction="#handleCloseButtonAction" text="Close" />
+   </children>
+</AnchorPane>

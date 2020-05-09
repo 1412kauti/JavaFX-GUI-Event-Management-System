@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <JFXButton fx:id="SignIn" layoutX="122.0" layoutY="201.0" onAction="#SignIn" text="SignIn" />
+      <JFXButton fx:id="SignUp" layoutX="120.0" layoutY="150.0" onAction="#SignUp" text="SignUp" />
+      <Label fx:id="StartLabel" layoutX="66.0" layoutY="53.0" text="Welcome to the Java Based " />
+      <Label fx:id="StartLabel1" layoutX="69.0" layoutY="93.0" text="Event Management System" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="Venu1" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="150.0" styleClass="root" text="Venue" />
+            <ScrollPane prefHeight="371.0" prefWidth="150.0">
+              <content>
+                <AnchorPane fx:id="rootPane" minHeight="0.0" minWidth="0.0" prefHeight="495.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="Venue1" prefHeight="26.0" prefWidth="150.0" text="Venue1" />
+                        <JFXButton fx:id="Venue2" layoutX="-4.0" layoutY="27.0" prefHeight="26.0" prefWidth="150.0" text="Venue2" />
+                        <JFXButton fx:id="Venue3" layoutX="-4.0" layoutY="54.0" prefHeight="26.0" prefWidth="150.0" text="Venue3" />
+                        <JFXButton fx:id="Venue4" layoutX="-3.0" layoutY="81.0" prefHeight="26.0" prefWidth="150.0" text="Venue4" />
+                        <JFXButton fx:id="Venue5" layoutX="-3.0" layoutY="108.0" prefHeight="26.0" prefWidth="150.0" text="Venue5" />
+                        <JFXButton fx:id="Venue6" layoutX="-4.0" layoutY="135.0" prefHeight="26.0" prefWidth="150.0" text="Venue6" />
+                        <JFXButton fx:id="Venue7" layoutX="-4.0" layoutY="162.0" prefHeight="26.0" prefWidth="150.0" text="Venue7" />
+                        <JFXButton fx:id="Venue8" layoutX="-4.0" layoutY="189.0" prefHeight="26.0" prefWidth="150.0" text="Venue8" />
+                        <JFXButton fx:id="Venue9" layoutX="-4.0" layoutY="216.0" prefHeight="26.0" prefWidth="150.0" text="Venue9" />
+                        <JFXButton fx:id="Venue10" layoutX="-4.0" layoutY="243.0" prefHeight="26.0" prefWidth="150.0" text="Venue10" />
+                        <JFXButton fx:id="Venue11" layoutX="-4.0" layoutY="270.0" prefHeight="26.0" prefWidth="150.0" text="Venue11" />
+                        <JFXButton fx:id="Venue12" layoutX="-4.0" layoutY="297.0" prefHeight="26.0" prefWidth="150.0" text="Venue12" />
+                        <JFXButton fx:id="Venue13" layoutX="-4.0" layoutY="324.0" prefHeight="26.0" prefWidth="150.0" text="Venue13" />
+                        <JFXButton fx:id="Venue14" layoutX="-4.0" layoutY="351.0" prefHeight="26.0" prefWidth="150.0" text="Venue14">
+                           <padding>
+                              <Insets top="-2.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <VBox fx:id="Booking_time_emptyvbox" layoutX="150.0" prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="Time" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="Time" />
+            <ScrollPane prefHeight="370.0" prefWidth="150.0">
+              <content>
+                <AnchorPane fx:id="AnchorPaneU" minHeight="0.0" minWidth="0.0" prefHeight="496.0" prefWidth="150.0">
+                     <children>
+                        <JFXButton prefHeight="26.0" prefWidth="150.0" text="Time1">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="27.0" prefHeight="26.0" prefWidth="150.0" text="Time2" />
+                        <JFXButton layoutY="54.0" prefHeight="26.0" prefWidth="150.0" text="Time3">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="81.0" prefHeight="26.0" prefWidth="150.0" text="Time4" />
+                        <JFXButton layoutY="108.0" prefHeight="26.0" prefWidth="150.0" text="Time5">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="135.0" prefHeight="26.0" prefWidth="150.0" text="Time6" />
+                        <JFXButton layoutY="162.0" prefHeight="26.0" prefWidth="150.0" text="Time7">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="189.0" prefHeight="26.0" prefWidth="150.0" text="Time8" />
+                        <JFXButton layoutY="216.0" prefHeight="26.0" prefWidth="150.0" text="Time9">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="243.0" prefHeight="26.0" prefWidth="150.0" text="Time10" />
+                        <JFXButton layoutY="270.0" prefHeight="26.0" prefWidth="150.0" text="Time11">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="297.0" prefHeight="26.0" prefWidth="150.0" text="Time12" />
+                        <JFXButton layoutY="324.0" prefHeight="26.0" prefWidth="150.0" text="Time13">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="351.0" prefHeight="26.0" prefWidth="150.0" text="Time14" />
+                        <JFXButton layoutY="378.0" prefHeight="26.0" prefWidth="150.0" text="Time15">
+                           <padding>
+                              <Insets bottom="1.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutY="405.0" prefHeight="26.0" prefWidth="150.0" text="Time16" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></VBox>
+      <VBox layoutX="300.0" prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="Noofseats" alignment="CENTER" prefHeight="32.0" prefWidth="150.0" text="No of Seats" />
+            <MenuButton mnemonicParsing="false" text="--Select--">
+              <items>
+                <MenuItem mnemonicParsing="false" text="1" />
+                <MenuItem mnemonicParsing="false" text="2" />
+                  <MenuItem mnemonicParsing="false" text="3" />
+                  <MenuItem mnemonicParsing="false" text="4" />
+                  <MenuItem mnemonicParsing="false" text="5" />
+              </items>
+            </MenuButton>
+         </children>
+      </VBox>
+      <VBox layoutX="450.0" prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="Summary" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="150.0" text="Summary" />
+            <Label fx:id="EventLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="150.0" text="Monument12"/>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Venue" />
+            <Label prefHeight="32.0" prefWidth="150.0" />
+            <Label text="Time" />
+            <Label prefHeight="32.0" prefWidth="149.0" />
+            <Label text="No of Seats" />
+            <Label prefHeight="32.0" prefWidth="151.0" />
+            <Line startX="150.0" stroke="#212121" />
+            <Label text="Price " />
+            <Label prefHeight="32.0" prefWidth="162.0" />
+            <Line startX="150.0" stroke="#212121" />
+            <Line startX="150.0" stroke="#212121" />
+            <JFXButton prefHeight="26.0" prefWidth="150.0" text="Pay Now" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

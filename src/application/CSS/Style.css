@@ -1,0 +1,200 @@
+.button
+{
+    -fx-background-color: #0277bd;
+    -fx-text-fill: white;
+}
+.label
+{
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-weight: bolder;
+}
+.tab-pane
+{
+    -fx-background-color: #424242;
+}
+.tab-header-background
+{
+    -fx-background-color: #212121;
+}
+.tab
+{
+    -fx-background-color: #424242;
+    -fx-border-radius: 1;
+    -fx-border-color: #424242;
+}
+.tab-label
+{
+    -fx-text-fill: white;
+}
+.tab:selected
+{
+    -fx-border-color: #0277bd;
+    -fx-border-width: 1;
+}
+.menu-button
+{
+    -fx-background-color: #424242;
+}
+.menu-button.label
+{
+    -fx-background-color: #212121 ;
+}
+.menu-button:focused
+{
+    -fx-background-color: #212121;
+}
+.menu-button:focused .label
+{
+    -fx-background-color: transparent;
+}
+.menu-item .label
+{
+    -fx-background-color: white;
+}
+.menu-item:focused
+{
+    -fx-background-color: #0277bd;
+}
+.context-menu
+{
+    -fx-background-color: #212121;
+}
+.check-box
+{
+    -fx-text-fill: white;
+}
+.jfx-text-field
+{
+    -jfx-focus-color: #0277bd;
+}
+.jfx-password-field
+{
+    -jfx-focus-color: #0277bd;
+}
+
+.jfx-date-picker {
+    -jfx-default-color: #0277bd;
+}
+.text-input
+{
+    -fx-text-fill: white;
+}
+.scroll-pane
+{
+    -fx-background-color: #212121;
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color: #212121;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: #424242;
+    -fx-border-color: #424242;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: #424242;
+    -fx-border-color: #424242;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #212121;
+    -fx-background-radius: 5em;
+}
+.scroll-pane > .corner {
+    -fx-background-color: #212121;
+}
+/*
+.jfx-date-picker
+{
+    -fx-background-color: #212121;
+}
+
+.jfx-date-picker .month-year-pane .spinner .left-button .right-arrow .spinner-label .selectedYearMonth .calender-grid .day-name-cell .week-number-cell
+{
+    -fx-background-color: #212121;
+}
+.jfx-date-picker .month-year-pane .spinner .button .left-arrow .right-arrow
+{
+    -fx-background-color: #424242;
+}
+.jfx-date-picker .cell
+{
+    -fx-background-color: #424242;
+    -fx-text-fill: white;
+    -fx-border-color: #212121;
+}
+.jfx-date-picker .day-cell:focused
+{
+    -fx-background-color: #0277bd;
+}
+.jfx-date-picker .day-cell:hover
+{
+    -fx-background-color: #0e347b;
+}
+
+.jfx-date-picker {
+    -jfx-default-color: #0277bd;
+    -fx-background-color: #424242;
+}
+*/
+.jfx-time-picker
+{
+    -jfx-default-color: #0277bd;
+}
+#AnchorPaneZ
+{
+    -fx-background-color: #424242;
+}
+#AnchorPaneY
+{
+    -fx-background-color: #424242;
+}
+#AnchorPaneX
+{
+    -fx-background-color: #424242;
+}
+#AnchorPaneW
+{
+    -fx-background-color: #424242;
+}
+#AnchorPaneU
+{
+    -fx-background-color: #424242;
+}
+.vbox
+{
+    -fx-background-color: #212121;
+}
+#rootPane
+{
+    -fx-background-color: #424242;
+}
+#Venu1
+{
+    -fx-background-color: #212121;
+}
+#Time
+{
+    -fx-background-color: #212121;
+}
+#Noofseats
+{
+    -fx-background-color: #212121;
+}
+#Summary
+{
+    -fx-background-color: #212121;
+}
+#Cancel
+{
+    -fx-background-color: crimson;
+}
+#Logout
+{
+    -fx-background-color: crimson;
+}

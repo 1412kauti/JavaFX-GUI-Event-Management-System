@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Create New Event">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="26.0" layoutY="18.0" text="Name of the Event :" />
+                        <Label layoutX="25.0" layoutY="53.0" text="Venue of the Event :" />
+                        <Label layoutX="33.0" layoutY="153.0" text="Time of the Event :" />
+                        <Label layoutX="35.0" layoutY="246.0" text="Category of Event" />
+                        <Label layoutX="14.0" layoutY="204.0" text="Per head Capacity of the Event: " />
+                        <JFXTextField layoutX="172.0" layoutY="14.0" />
+                        <JFXTextField layoutX="172.0" layoutY="49.0" />
+                        <Label layoutX="31.0" layoutY="107.0" text="Date of the Event :" />
+                        <JFXButton layoutX="120.0" layoutY="315.0" text="Upload Image" />
+                        <JFXButton layoutX="392.0" layoutY="315.0" text="Create Event" />
+                        <MenuButton layoutX="212.0" layoutY="242.0" mnemonicParsing="false" text="--Select--">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Movies" />
+                            <MenuItem mnemonicParsing="false" text="Events" />
+                              <MenuItem mnemonicParsing="false" text="Plays" />
+                              <MenuItem mnemonicParsing="false" text="Sports" />
+                              <MenuItem mnemonicParsing="false" text="Activities" />
+                              <MenuItem mnemonicParsing="false" text="Monuments" />
+                          </items>
+                        </MenuButton>
+                        <JFXTextField layoutX="190.0" layoutY="200.0" prefHeight="26.0" prefWidth="118.0" />
+                        <JFXDatePicker layoutX="154.0" layoutY="101.0" />
+                        <JFXTimePicker layoutX="154.0" layoutY="154.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="My Events">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <TabPane prefHeight="369.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                              <tabs>
+                                  <Tab text="Past Events">
+                                      <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                              <children>
+                                          <ScrollPane prefHeight="338.0" prefWidth="300.0">
+                                            <content>
+                                              <AnchorPane fx:id="AnchorPaneZ" minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="300.0">
+                                                   <children>
+                                                       <JFXButton fx:id="PrevEvent1" layoutY="2.0" onAction="#PrevEvent1" prefHeight="26.0" prefWidth="282.0" text="PrevEvent1" />
+                                                       <JFXButton fx:id="PrevEvent2" layoutY="29.0" onAction="#PrevEvent2" prefHeight="26.0" prefWidth="282.0" text="PrevEvent2" />
+                                                       <JFXButton fx:id="PrevEvent3" layoutY="56.0" onAction="#PrevEvent3" prefHeight="26.0" prefWidth="282.0" text="PrevEvent3" />
+                                                       <JFXButton fx:id="PrevEvent4" layoutY="83.0" onAction="#PrevEvent4" prefHeight="26.0" prefWidth="282.0" text="PrevEvent4" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                              </children>
+                                          </AnchorPane>
+                                      </content>
+                                  </Tab>
+                                  <Tab text="Upcoming Events">
+                                      <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                              <children>
+                                          <ScrollPane prefHeight="342.0" prefWidth="300.0">
+                                             <content>
+                                                <AnchorPane fx:id="AnchorPaneY" minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="300.0">
+                                                   <children>
+                                                       <JFXButton fx:id="UpcomingEvent1" onAction="#UpcomingEvent1" prefHeight="26.0" prefWidth="282.0" text="UpcomingEvent1" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                              </children>
+                                          </AnchorPane>
+                                      </content>
+                                  </Tab>
+                              </tabs>
+                          </TabPane>
+                        <ImageView fx:id="Thumbnail3" fitHeight="300.0" fitWidth="300.0" layoutX="301.0" pickOnBounds="true" preserveRatio="true" />
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+          <Tab text="My Profile">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <VBox prefHeight="369.0" prefWidth="600.0">
+                              <children>
+                                  <JFXButton fx:id="ChangeUsername" onAction="#ChangeUsername" prefHeight="26.0" prefWidth="600.0" text="Change Username">
+                                      <VBox.margin>
+                                          <Insets bottom="1.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                                  <JFXButton fx:id="ChangePassword" onAction="#ChangePassword" prefHeight="26.0" prefWidth="601.0" text="Change Password">
+                                      <VBox.margin>
+                                          <Insets bottom="1.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                                  <JFXButton fx:id="ChangeLocation" layoutX="10.0" layoutY="36.0" onAction="#ChangeLocation" prefHeight="26.0" prefWidth="754.0" text="Change Location">
+                                      <VBox.margin>
+                                          <Insets bottom="1.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                                  <JFXButton fx:id="ChangeEmail" layoutX="10.0" layoutY="61.0" onAction="#ChangeEmail" prefHeight="26.0" prefWidth="720.0" text="Change Email">
+                                      <VBox.margin>
+                                          <Insets bottom="1.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                                  <JFXButton fx:id="ChangeLanguage" layoutX="10.0" layoutY="87.0" onAction="#ChangeLanguage" prefHeight="26.0" prefWidth="802.0" text="Change Language">
+                                      <VBox.margin>
+                                          <Insets bottom="1.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                                  <JFXButton fx:id="Logout" layoutX="10.0" layoutY="119.0" onAction="#Logout" prefHeight="26.0" prefWidth="802.0" text="Logout">
+                                      <VBox.margin>
+                                          <Insets top="150.0" />
+                                      </VBox.margin>
+                                  </JFXButton>
+                              </children>
+                          </VBox>
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <JFXDatePicker layoutX="400.0" />
+   </children>
+</AnchorPane>

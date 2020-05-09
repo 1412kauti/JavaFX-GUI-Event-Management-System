@@ -1,0 +1,34 @@
+.button
+{
+    -fx-background-color: #0277bd;
+    -fx-text-fill: white;
+}
+.label
+{
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-weight: bolder;
+}
+.tab-pane
+{
+    -fx-background-color: #424242;
+}
+.tab-header-background
+{
+    -fx-background-color: #212121;
+}
+.tab
+{
+    -fx-background-color: #424242;
+    -fx-border-radius: 1;
+    -fx-border-color: #424242;
+}
+.tab-label
+{
+    -fx-text-fill: white;
+}
+.tab:selected
+{
+    -fx-border-color: #0277bd;
+    -fx-border-width: 1;
+}

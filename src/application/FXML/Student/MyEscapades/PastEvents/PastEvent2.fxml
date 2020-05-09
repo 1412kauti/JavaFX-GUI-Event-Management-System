@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" prefHeight="180.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="180.0" prefWidth="150.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="282.0" text="Event Name:">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="282.0" text="Category :" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="48.0" prefWidth="282.0" text="Venue :">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="76.0" prefWidth="282.0" text="Date :">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="104.0" prefWidth="282.0" text="Time :">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="132.0" prefWidth="282.0" text="Status :">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="150.0" prefHeight="180.0" prefWidth="150.0">
+         <children>
+            <Label prefWidth="203.0" text="PastEvent2">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="20.0" prefWidth="203.0" text="Sport">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="49.0" prefWidth="203.0" text="Venue2">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="78.0" prefWidth="203.0" text="DD/MM/YYYY">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="104.0" prefWidth="203.0" text="Hours:Mins">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="132.0" prefWidth="203.0" text="Cancelled">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

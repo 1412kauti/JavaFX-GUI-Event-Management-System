@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="Confirmation" layoutX="60.0" layoutY="83.0" text="Thank You for Registering with Us" />
+      <Label fx:id="Confirmation1" layoutX="50.0" layoutY="134.0" text="A Conformation E-mail has been sent " />
+      <Button fx:id="backtoLogin" layoutX="82.0" layoutY="239.0" mnemonicParsing="false" onAction="#backtoLogin" text="Go Back to Login Page" />
+      <Label fx:id="Confirmation11" layoutX="81.0" layoutY="189.0" text="to the provided Address" />
+   </children>
+</AnchorPane>

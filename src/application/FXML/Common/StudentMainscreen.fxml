@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Events">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="368.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Movies">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                       <JFXButton fx:id="Movie1" onAction="#Movie1" prefHeight="26.0" prefWidth="282.0" text="Movie1" />
+                                                       <JFXButton fx:id="Movie2" layoutY="27.0" onAction="#Movie2" prefHeight="26.0" prefWidth="282.0" text="Movie2 " />
+                                                       <JFXButton fx:id="Movie3" layoutY="54.0" onAction="#Movie3" prefHeight="26.0" prefWidth="282.0" text="Movie3" />
+                                                       <JFXButton fx:id="Movie4" layoutY="81.0" onAction="#Movie4" prefHeight="26.0" prefWidth="282.0" text="Movie4" />
+                                                       <JFXButton fx:id="Movie5" layoutY="108.0" onAction="#Movie5" prefHeight="26.0" prefWidth="282.0" text="Movie5" />
+                                                       <JFXButton fx:id="Movie6" layoutY="135.0" onAction="#Movie6" prefHeight="26.0" prefWidth="282.0" text="Movie6" />
+                                                       <JFXButton fx:id="Movie7" layoutY="162.0" onAction="#Movie7" prefHeight="26.0" prefWidth="282.0" text="Movie7" />
+                                                       <JFXButton fx:id="Movie8" layoutY="189.0" onAction="#Movie8" prefHeight="26.0" prefWidth="282.0" text="Movie8" />
+                                                       <JFXButton fx:id="Movie9" layoutY="216.0" onAction="#Movie9" prefHeight="26.0" prefWidth="282.0" text="Movie9" />
+                                                       <JFXButton fx:id="Movie10" layoutY="243.0" onAction="#Movie10" prefHeight="26.0" prefWidth="282.0" text="Movie10" />
+                                                       <JFXButton fx:id="Movie11" layoutY="270.0" onAction="#Movie11" prefHeight="26.0" prefWidth="282.0" text="Movie11" />
+                                                       <JFXButton fx:id="Movie12" layoutY="297.0" onAction="#Movie12" prefHeight="26.0" prefWidth="282.0" text="Movie12" />
+                                                       <JFXButton fx:id="Movie13" layoutY="324.0" onAction="#Movie13" prefHeight="26.0" prefWidth="282.0" text="Movie13" />
+                                                       <JFXButton fx:id="Movie14" layoutY="351.0" onAction="#Movie14" prefHeight="26.0" prefWidth="282.0" text="Movie14" />
+                                                       <JFXButton fx:id="Movie15" layoutY="378.0" onAction="#Movie15" prefHeight="26.0" prefWidth="282.0" text="Movie15" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Events">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="Event1" onAction="#Event1" prefHeight="26.0" prefWidth="282.0" text="Event1" />
+                                                      <JFXButton fx:id="Event2" layoutY="27.0" onAction="#Event2" prefHeight="26.0" prefWidth="282.0" text="Event2 " />
+                                                      <JFXButton fx:id="Event3" layoutY="54.0" onAction="#Event3" prefHeight="26.0" prefWidth="282.0" text="Event3" />
+                                                      <JFXButton fx:id="Event4" layoutY="81.0" onAction="#Event4" prefHeight="26.0" prefWidth="282.0" text="Event4" />
+                                                      <JFXButton fx:id="Event5" layoutY="108.0" onAction="#Event5" prefHeight="26.0" prefWidth="282.0" text="Event5" />
+                                                      <JFXButton fx:id="Event6" layoutY="135.0" onAction="#Event6" prefHeight="26.0" prefWidth="282.0" text="Event6" />
+                                                      <JFXButton fx:id="Event7" layoutY="162.0" onAction="#Event7" prefHeight="26.0" prefWidth="282.0" text="Event7" />
+                                                      <JFXButton fx:id="Event8" layoutY="189.0" onAction="#Event8" prefHeight="26.0" prefWidth="282.0" text="Event8" />
+                                                      <JFXButton fx:id="Event9" layoutY="216.0" onAction="#Event9" prefHeight="26.0" prefWidth="282.0" text="Event9" />
+                                                      <JFXButton fx:id="Event10" layoutY="243.0" onAction="#Event10" prefHeight="26.0" prefWidth="282.0" text="Event10" />
+                                                      <JFXButton fx:id="Event11" layoutY="270.0" onAction="#Event11" prefHeight="26.0" prefWidth="282.0" text="Event11" />
+                                                      <JFXButton fx:id="Event12" layoutY="297.0" onAction="#Event12" prefHeight="26.0" prefWidth="282.0" text="Event12" />
+                                                      <JFXButton fx:id="Event13" layoutY="324.0" onAction="#Event13" prefHeight="26.0" prefWidth="282.0" text="Event13" />
+                                                      <JFXButton fx:id="Event14" layoutY="351.0" onAction="#Event14" prefHeight="26.0" prefWidth="282.0" text="Event14" />
+                                                      <JFXButton fx:id="Event15" layoutY="378.0" onAction="#Event15" prefHeight="26.0" prefWidth="282.0" text="Event15" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Plays">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                                  <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="Play1" onAction="#Play1" prefHeight="26.0" prefWidth="282.0" text="Play1" />
+                                                      <JFXButton fx:id="Play2" layoutY="27.0" onAction="#Play2" prefHeight="26.0" prefWidth="282.0" text="Play2" />
+                                                      <JFXButton fx:id="Play3" layoutY="54.0" onAction="#Play3" prefHeight="26.0" prefWidth="282.0" text="Play3" />
+                                                      <JFXButton fx:id="Play4" layoutY="81.0" onAction="#Play4" prefHeight="26.0" prefWidth="282.0" text="Play4" />
+                                                      <JFXButton fx:id="Play5" layoutY="108.0" onAction="#Play5" prefHeight="26.0" prefWidth="282.0" text="Play5" />
+                                                      <JFXButton fx:id="Play6" layoutY="135.0" onAction="#Play6" prefHeight="26.0" prefWidth="282.0" text="Play6" />
+                                                      <JFXButton fx:id="Play7" layoutY="162.0" onAction="#Play7" prefHeight="26.0" prefWidth="282.0" text="Play7" />
+                                                      <JFXButton fx:id="Play8" layoutY="189.0" onAction="#Play8" prefHeight="26.0" prefWidth="282.0" text="Play8" />
+                                                      <JFXButton fx:id="Play9" layoutY="216.0" onAction="#Play9" prefHeight="26.0" prefWidth="282.0" text="Play9" />
+                                                      <JFXButton fx:id="Play10" layoutY="243.0" onAction="#Play10" prefHeight="26.0" prefWidth="282.0" text="Play10" />
+                                                      <JFXButton fx:id="Play11" layoutY="270.0" onAction="#Play11" prefHeight="26.0" prefWidth="282.0" text="Play11" />
+                                                      <JFXButton fx:id="Play12" layoutY="297.0" onAction="#Play12" prefHeight="26.0" prefWidth="282.0" text="Play12" />
+                                                      <JFXButton fx:id="Play13" layoutY="324.0" onAction="#Play13" prefHeight="26.0" prefWidth="282.0" text="Play13" />
+                                                      <JFXButton fx:id="Play14" layoutY="351.0" onAction="#Play14" prefHeight="26.0" prefWidth="282.0" text="Play14" />
+                                                      <JFXButton fx:id="Play15" layoutY="378.0" onAction="#Play15" prefHeight="26.0" prefWidth="282.0" text="Play15" />
+                                                   </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                              </ScrollPane>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Sports">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                                  <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="Sport1" onAction="#Sport1" prefHeight="26.0" prefWidth="282.0" text="Sport1" />
+                                                      <JFXButton fx:id="Sport2" layoutY="27.0" onAction="#Sport2" prefHeight="26.0" prefWidth="282.0" text="Sport2" />
+                                                      <JFXButton fx:id="Sport3" layoutY="54.0" onAction="#Sport3" prefHeight="26.0" prefWidth="282.0" text="Sport3" />
+                                                      <JFXButton fx:id="Sport4" layoutY="81.0" onAction="#Sport4" prefHeight="26.0" prefWidth="282.0" text="Sport4" />
+                                                      <JFXButton fx:id="Sport5" layoutY="108.0" onAction="#Sport5" prefHeight="26.0" prefWidth="282.0" text="Sport5" />
+                                                      <JFXButton fx:id="Sport6" layoutY="135.0" onAction="#Sport6" prefHeight="26.0" prefWidth="282.0" text="Sport6" />
+                                                      <JFXButton fx:id="Sport7" layoutY="162.0" onAction="#Sport7" prefHeight="26.0" prefWidth="282.0" text="Sport7" />
+                                                      <JFXButton fx:id="Sport8" layoutY="189.0" onAction="#Sport8" prefHeight="26.0" prefWidth="282.0" text="Sport8" />
+                                                      <JFXButton fx:id="Sport9" layoutY="216.0" onAction="#Sport9" prefHeight="26.0" prefWidth="282.0" text="Sport9" />
+                                                      <JFXButton fx:id="Sport10" layoutY="243.0" onAction="#Sport10" prefHeight="26.0" prefWidth="282.0" text="Sport10" />
+                                                      <JFXButton fx:id="Sport11" layoutY="270.0" onAction="#Sport11" prefHeight="26.0" prefWidth="282.0" text="Sport11" />
+                                                      <JFXButton fx:id="Sport12" layoutY="297.0" onAction="#Sport12" prefHeight="26.0" prefWidth="282.0" text="Sport12" />
+                                                      <JFXButton fx:id="Sport13" layoutY="324.0" onAction="#Sport13" prefHeight="26.0" prefWidth="282.0" text="Sport13" />
+                                                      <JFXButton fx:id="Sport14" layoutY="351.0" onAction="#Sport14" prefHeight="26.0" prefWidth="282.0" text="Sport14" />
+                                                      <JFXButton fx:id="Sport15" layoutY="378.0" onAction="#Sport15" prefHeight="26.0" prefWidth="282.0" text="Sport15" />
+                                                   </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                              </ScrollPane>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Activities">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                                  <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="Activity1" onAction="#Activity1" prefHeight="26.0" prefWidth="282.0" text="Activity1" />
+                                                      <JFXButton fx:id="Activity2" layoutY="27.0" onAction="#Activity2" prefHeight="26.0" prefWidth="282.0" text="Activity2" />
+                                                      <JFXButton fx:id="Activity3" layoutY="54.0" onAction="#Activity3" prefHeight="26.0" prefWidth="282.0" text="Activity3" />
+                                                      <JFXButton fx:id="Activity4" layoutY="81.0" onAction="#Activity4" prefHeight="26.0" prefWidth="282.0" text="Activity4" />
+                                                      <JFXButton fx:id="Activity5" layoutY="108.0" onAction="#Activity5" prefHeight="26.0" prefWidth="282.0" text="Activity5" />
+                                                      <JFXButton fx:id="Activity6" layoutY="135.0" onAction="#Activity6" prefHeight="26.0" prefWidth="282.0" text="Activity6" />
+                                                      <JFXButton fx:id="Activity7" layoutY="162.0" onAction="#Activity7" prefHeight="26.0" prefWidth="282.0" text="Activity7" />
+                                                      <JFXButton fx:id="Activity8" layoutY="189.0" onAction="#Activity8" prefHeight="26.0" prefWidth="282.0" text="Activity8" />
+                                                      <JFXButton fx:id="Activity9" layoutY="216.0" onAction="#Activity9" prefHeight="26.0" prefWidth="282.0" text="Activity9" />
+                                                      <JFXButton fx:id="Activity10" layoutY="243.0" onAction="#Activity10" prefHeight="26.0" prefWidth="282.0" text="Activity10" />
+                                                      <JFXButton fx:id="Activity11" layoutY="270.0" onAction="#Activity11" prefHeight="26.0" prefWidth="282.0" text="Activity11" />
+                                                      <JFXButton fx:id="Activity12" layoutY="297.0" onAction="#Activity12" prefHeight="26.0" prefWidth="282.0" text="Activity12" />
+                                                      <JFXButton fx:id="Activity13" layoutY="324.0" onAction="#Activity13" prefHeight="26.0" prefWidth="282.0" text="Activity13" />
+                                                      <JFXButton fx:id="Activity14" layoutY="351.0" onAction="#Activity14" prefHeight="26.0" prefWidth="282.0" text="Activity14" />
+                                                      <JFXButton fx:id="Activity15" layoutY="378.0" onAction="#Activity15" prefHeight="26.0" prefWidth="282.0" text="Activity15" />
+                                                   </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                              </ScrollPane>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Monuments">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <ScrollPane prefHeight="335.0" prefWidth="300.0">
+                                                  <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="Monument1" onAction="#Monument1" prefHeight="26.0" prefWidth="282.0" text="Monument1" />
+                                                      <JFXButton fx:id="Monument2" layoutY="27.0" onAction="#Monument2" prefHeight="26.0" prefWidth="282.0" text="Monument2" />
+                                                      <JFXButton fx:id="Monument3" layoutY="54.0" onAction="#Monument3" prefHeight="26.0" prefWidth="282.0" text="Monument3" />
+                                                      <JFXButton fx:id="Monument4" layoutY="81.0" onAction="#Monument4" prefHeight="26.0" prefWidth="282.0" text="Monument4" />
+                                                      <JFXButton fx:id="Monument5" layoutY="108.0" onAction="#Monument5" prefHeight="26.0" prefWidth="282.0" text="Monument5" />
+                                                      <JFXButton fx:id="Monument6" layoutY="135.0" onAction="#Monument6" prefHeight="26.0" prefWidth="282.0" text="Monument6" />
+                                                      <JFXButton fx:id="Monument7" layoutY="162.0" onAction="#Monument7" prefHeight="26.0" prefWidth="282.0" text="Monument7" />
+                                                      <JFXButton fx:id="Monument8" layoutY="189.0" onAction="#Monument8" prefHeight="26.0" prefWidth="282.0" text="Monument8" />
+                                                      <JFXButton fx:id="Monument9" layoutY="216.0" onAction="#Monument9" prefHeight="26.0" prefWidth="282.0" text="Monument9" />
+                                                      <JFXButton fx:id="Monument10" layoutY="243.0" onAction="#Monument10" prefHeight="26.0" prefWidth="282.0" text="Monument10" />
+                                                      <JFXButton fx:id="Monument11" layoutY="270.0" onAction="#Monument11" prefHeight="26.0" prefWidth="282.0" text="Monument11" />
+                                                      <JFXButton fx:id="Monument12" layoutY="297.0" onAction="#Monument12" prefHeight="26.0" prefWidth="282.0" text="Monument12" />
+                                                      <JFXButton fx:id="Monument13" layoutY="324.0" onAction="#Monument13" prefHeight="26.0" prefWidth="282.0" text="Monument13" />
+                                                      <JFXButton fx:id="Monument14" layoutY="351.0" onAction="#Monument14" prefHeight="26.0" prefWidth="282.0" text="Monument14" />
+                                                      <JFXButton fx:id="Monument15" layoutY="378.0" onAction="#Monument15" prefHeight="26.0" prefWidth="282.0" text="Monument15" />
+                                                   </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                              </ScrollPane>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <ImageView fx:id="Thumbnail" fitHeight="300.0" fitWidth="300.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="My Escapades">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="369.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Past Events">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="338.0" prefWidth="301.0">
+                                            <content>
+                                              <AnchorPane fx:id="AnchorPaneX" minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="301.0">
+                                                   <children>
+                                                      <JFXButton fx:id="PastEvent1" layoutY="2.0" onAction="#PastEvent1" prefHeight="26.0" prefWidth="282.0" text="PastEvent1" />
+                                                      <JFXButton fx:id="PastEvent2" layoutY="29.0" onAction="#PastEvent2" prefHeight="26.0" prefWidth="282.0" text="PastEvent2" />
+                                                      <JFXButton fx:id="PastEvent3" layoutY="56.0" onAction="#PastEvent3" prefHeight="26.0" prefWidth="282.0" text="PastEvent3" />
+                                                      <JFXButton fx:id="PastEvent4" layoutY="83.0" onAction="#PastEvent4" prefHeight="26.0" prefWidth="282.0" text="PastEvent4" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Upcoming Events">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="338.0" prefWidth="300.0">
+                                            <content>
+                                              <AnchorPane fx:id="AnchorPaneW" minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="300.0">
+                                                   <children>
+                                                      <JFXButton fx:id="FutureEvent1" onAction="#FutureEvent1" prefHeight="26.0" prefWidth="282.0" text="FutureEvent1" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                          <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <ImageView fx:id="Thumbnail2" fitHeight="300.0" fitWidth="300.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="My Profile">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="369.0" prefWidth="600.0">
+                           <children>
+                              <JFXButton fx:id="ChangeUsername" onAction="#ChangeUsername" prefHeight="26.0" prefWidth="600.0" text="Change Username">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="ChangePassword" onAction="#ChangePassword" prefHeight="26.0" prefWidth="601.0" text="Change Password">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="ChangeLocation" layoutX="10.0" layoutY="36.0" onAction="#ChangeLocation" prefHeight="26.0" prefWidth="754.0" text="Change Location">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="ChangeEmail" layoutX="10.0" layoutY="61.0" onAction="#ChangeEmail" prefHeight="26.0" prefWidth="720.0" text="Change Email">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="ChangeLanguage" layoutX="10.0" layoutY="87.0" onAction="#ChangeLanguage" prefHeight="26.0" prefWidth="802.0" text="Change Language">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="Logout" layoutX="10.0" layoutY="119.0" onAction="#Logout" prefHeight="26.0" prefWidth="802.0" text="Logout">
+                                 <VBox.margin>
+                                    <Insets top="150.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+        </Tab>
+      
+        </tabs>
+      </TabPane>
+      <JFXDatePicker layoutX="400.0" />
+   </children>
+</AnchorPane>
