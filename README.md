@@ -105,10 +105,9 @@ The *main()* method calls the static *launch()* method with the command line par
 
 The *launch()* method will detect from which class it is called, So there is no need to explicitly specify which class to launch.
 
-All subclasses of the JavaFXApplication class must implement the abstract start() method of the Application class (or be an abstract subclass of Application itself).
+All subclasses of the JavaFXApplication class must implement the abstract *start()* method of the Main class (or be an abstract subclass of Main itself).
 
-The start() method takes a single parameter of the type Stage . The stage is where all the visual parts of the JavaFX application are displayed. The Stage object is created for you by the JavaFX runtime.
+The *start()* method takes a single parameter of the type **Stage** . The stage is where all the visual parts of the JavaFX application are displayed. The Stage object is created by default by the JavaFX runtime.
 
 
 
-The othe
