@@ -80,8 +80,7 @@ The **Main** Class houses the *main* method and
 The **Controller** Class houses all the other sub-classes being used in the Application.
 
 The GUI has 2 major parts, The **Stage** and the **Scene** which are depicted as follows
-
-![] /Screenshots/1.jpg
+![](Screenshots/1.jpg)
 
 
 
