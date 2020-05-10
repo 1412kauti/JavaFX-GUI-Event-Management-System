@@ -104,12 +104,59 @@ The *main()* method calls the static *launch()* method with the command line par
 
 The *launch()* method will detect from which class it is called, So there is no need to explicitly specify which class to launch.
 
-All subclasses of the JavaFXApplication class must implement the abstract *start()* method of the Main class (or be an abstract subclass of Main itself).
+All subclasses of the JavaFXApplication class must implement the abstract *start()* method of the Main class (or be an abstract subclass of Main itself).The *start()* method takes in an argument of a **Stage** named **PrimaryStage**.
+
+The **javafx.application.Application** class provides a framework for managing a JavaFX application. This application must include a class that extends Application, overriding various methods that the JavaFX runtime calls to execute application-specific code.
+
+An application can call Application methods to obtain startup parameters, access host services, arrange to launch itself as a standalone application, interact with the preloader (a small application that's started before the main application to customize the startup experience), and access the user agent (Web browser) style sheet.
 
 The *start()* method takes a single parameter of the type **Stage** . The stage is where all the visual parts of the JavaFX application are displayed. The Stage object is created by default by the JavaFX runtime.
 
-In a New FXML File (which is named StartSceen.fxml in this case). The code follows a similar tone to HTML, wherein the scene is interpreted as an **AnchorPane** and all its contents are enclosed .
+When executing Java code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
 
-Within the AnchorPane, 2 Buttons have been created for SignIn and Signup 
+When an error occurs, Java will normally stop and generate an error message. The technical term for this is: Java will throw an exception (throw an error).
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+The try and catch keywords come in pairs.
+
+within **try**, The FXML files are linked to the subclass using the Parent Class by importing **javafx.scene.Parent** as
+```
+Parent root = FXMLLoader.load(getClass().getResource("/application/FXML/Common/StartScreen.fxml"));
+```
+The FXML file is stored in the variable **root**.
+The Scene is now setup with 3 parameters. i.e. root, height of the Scene and the Width of the Scene. as seen here:
+```
+Scene scene = new Scene(root,300,300);
+```
+here height and width of the Scene are 300 and 300 respectively.
+
+The Styling of the scene can be done by using Stylesheets(CSS).
+```
+scene.getStylesheets().add("/application/CSS/StartScreen.css");
+```
+The **PrimaryStage** uses the **setScene** option taking the parameter of **scene**.
+
+To Disable the resizability of the stage, the option **setResizable** is used having a boolean parameter **false**. 
+```
+setResizable(false)
+```
+Simple creating a JavaFX Stage object will not show it. In order to make the Stage visible, its **show()** method has to be called.In this case:
+```
+primaryStage.show()
+```
+Within **catch**, it uses an argument of an **Exception**, the underlying code states that it will call the *printStackTrace()* method and will make sure that Java wont stop the application even though it hits the error.
+
+
+
+
+
+
+
+
+
+
 
 
