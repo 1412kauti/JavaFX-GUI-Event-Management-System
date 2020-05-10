@@ -1,13 +1,13 @@
 # Java Based Event Management System
-## University of Bedfordshire
+### University of Bedfordshire
 ### Principles of Programming Languages
 
-#### Introduction:
+## Introduction:
 The task was to create a Java Base Graphical User Interface for an event management system.
 
 This Project is made by using JavaFX instead of Swing/AWT.
 
-#### Setup: (The First 2 steps can be ignoed if already setup)
+## Setup: (The First 2 steps can be ignoed if already setup)
 1. Install Java
     The Java Verison used here is Java 11 which can be downloaded and installed using
 
@@ -127,7 +127,7 @@ within **try**, The FXML files are linked to the subclass using the Parent Class
 Parent root = FXMLLoader.load(getClass().getResource("/application/FXML/Common/StartScreen.fxml"));
 ```
 The FXML file is stored in the variable **root**.
-The Scene is now setup with 3 parameters. i.e. root, height of the Scene and the Width of the Scene. as seen here:
+The Scene is now setup with 3 parameters. i.e. root, height of the Scene and the Width of the Scene. as shown below:
 ```
 Scene scene = new Scene(root,300,300);
 ```
@@ -139,7 +139,7 @@ scene.getStylesheets().add("/application/CSS/StartScreen.css");
 ```
 The **PrimaryStage** uses the **setScene** option taking the parameter of **scene**.
 
-To Disable the resizability of the stage, the option **setResizable** is used having a boolean parameter **false**. 
+To Disable the resizability of the stage, the option **setResizable** is called, having a boolean parameter **false**. 
 ```
 setResizable(false)
 ```
@@ -148,6 +148,115 @@ Simple creating a JavaFX Stage object will not show it. In order to make the Sta
 primaryStage.show()
 ```
 Within **catch**, it uses an argument of an **Exception**, the underlying code states that it will call the *printStackTrace()* method and will make sure that Java wont stop the application even though it hits the error.
+
+#### Setting Layouts using Scenebuilder
+
+The FXML files can be hand coded but the process becomes tedious for long workflows, this is where Scenebuilder comes in.
+
+It enables the user to drag-and-drop the controls and also preview the layouts while at it.
+
+FXML files come with many themes in built, by default it is set to **Modena**. But third party themes can also be used. 
+
+In this case, a third party open-source library called **Jfoenix** has been used to mimic the style of Android's material GUI scheme.
+
+All the Controls like Buttons, Labels, ScrollPanes, Vertical Boxes(VBox), Lines,etc can have their sizes, length and position can be defined using Options like
+
+* PrefWidth, PrefHeight of changing the size. 
+* Layout X and Layout Y for changing the position on an AnchorPane.
+
+The FXML file can be linked to the Controller Class by changing the parameters in the **Controller tab** on the left. 
+
+The Controls which have some working are assigned **fx:ids** and an **On Action** text-field which assigns a function from the Controller Class.
+This is seen in The **Coding tab** on right.
+
+### Assigning Buttons to Open a new Stage
+
+Within the Main Class,
+
+The Control has to be defined as a **private/public** under **@FXML** as seen below:
+```
+@FXML
+public Button SignUp
+```
+The **Button1** has a class Button. This variable Button1 needs to have the same name as its fx:id.
+
+The functionality of clicking the button is as follows. This sub-class is a part of the Controller class.
+
+```
+    public void SignUp(ActionEvent event) throws Exception {
+        Stage primaryStage = new Stage();
+        Parent root1 = FXMLLoader.load(getClass().getResource("/application/FXML/Common/SignUp.fxml"));
+        Scene scene = new Scene(root1, 300, 300);
+        scene.getStylesheets().add("/application/CSS/Style.css");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        Stage stage = (Stage) SignUp.getScene().getWindow();
+        stage.close();
+    }
+```
+In the above case, the action is named **SignUp**. The sub-class is very similar to the *start()* method used in the **Main** Class with setting up the Stage, importing the FXML layout, setting up the scene, disabling the Resizability of the Stage and finally displaying the Stage
+
+The difference is that, in the end of this snippet, especially in the last two lines.
+
+This allows to close the existing stage and also open a new Stage which is directed by another FXML file.
+
+### Assigning ImageView to open Images on a Button Click.
+
+ImageView is a frame which can open images within a stage.
+
+Within Scenebuilder, an ImageView Layout can be assigned to open a single image which is preset. But to Open an Image by the press of a button,
+
+Each button has to be assigned to an image, which in turn is assigned to set the image on ImageView, as seen below:
+```
+    @FXML
+    private Button Movie1;
+    @FXML
+    private ImageView Thumbnail;
+```
+A Button and an Imageview window are firstly defined
+```
+
+    public void Movie1(ActionEvent event) throws Exception {
+        Movie1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Thumbnail.setImage(new Image("file:src/images/Student/Events/Movies/1.jpg"));
+                Stage primaryStage = new Stage();
+                Parent root2 = null;
+                try {
+                    root2 = FXMLLoader.load(getClass().getResource("/application/FXML/Student/Booking/Movies/BookingMovie1.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Scene scene = new Scene(root2, 600, 400);
+                scene.getStylesheets().add("/application/CSS/Style.css");
+                            primaryStage.setScene(scene);
+            primaryStage.maximizedProperty().addListener((observable, oldValue, newValue) -> {
+                if (newValue)
+                    primaryStage.setMaximized(false);
+            });
+                primaryStage.setResizable(false);
+                primaryStage.show();
+                Stage stage = (Stage) Movie1.getScene().getWindow();
+            }
+        });
+    }
+```
+The subclass Movie1 is identical to the previous case where it opens a new stage when the Button Movie1 is pressed, but as soon as the sub-class is defined, an ActionEvent is called for using mouse inputs under an **@Override**. The image to be set in the ImageView Layout named **Thumbnail** by calling a new Image from its respective direcctory within the Project folder.
+
+The image has to be set before the Stage is set or else it will not define it.
+
+There were a few errors when setting up the root by calling the Parent class directly, which is mitigated by assigning the Parent variable to **null**. and the Parent variable is later defined under a try-catch route, where the class will execute even though there as **IOExceptions**.
+
+At the end of the class, The Button Movie1 is assigned to open BookingMovie1.fxml.
+
+While opening this new Stage, it should not close the existing stage, which is why the **.close()** option is excluded.
+
+
+
+
+
 
 
 
