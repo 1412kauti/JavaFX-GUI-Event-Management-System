@@ -10,6 +10,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import com.jfoenix.controls.JFXPasswordField?>
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
   <tabs>
     <Tab fx:id="StudentSignUpTab" text="Student">
@@ -32,7 +33,7 @@
                   </MenuButton>
                   <JFXTextField layoutX="84.0" layoutY="2.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="83.0" layoutY="31.0" prefHeight="26.0" prefWidth="210.0" />
-                  <JFXTextField layoutX="82.0" layoutY="61.0" prefHeight="26.0" prefWidth="210.0" />
+                  <JFXPasswordField layoutX="82.0" layoutY="61.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="81.0" layoutY="90.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="82.0" layoutY="119.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="81.0" layoutY="148.0" prefHeight="26.0" prefWidth="210.0" />
@@ -53,7 +54,7 @@
                   <CheckBox layoutX="17.0" layoutY="191.0" mnemonicParsing="false" text="I am a Student" />
                   <JFXTextField layoutX="84.0" layoutY="1.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="84.0" layoutY="28.0" prefHeight="26.0" prefWidth="210.0" />
-                  <JFXTextField layoutX="84.0" layoutY="57.0" prefHeight="26.0" prefWidth="210.0" />
+                  <JFXPasswordField layoutX="84.0" layoutY="57.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="84.0" layoutY="84.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="84.0" layoutY="114.0" prefHeight="26.0" prefWidth="210.0" />
                   <JFXTextField layoutX="150.0" layoutY="145.0" prefHeight="26.0" prefWidth="144.0" />
