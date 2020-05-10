@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Java Based Event Management System
 ## University of Bedfordshire
 ### Principles of Programming Languages
