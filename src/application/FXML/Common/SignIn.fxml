@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
@@ -20,11 +18,11 @@
                      <children>
                         <Label layoutX="7.0" layoutY="88.0" text="Email/Username:" />
                         <Label layoutX="44.0" layoutY="126.0" text="Password:" />
-                        <TextField fx:id="User1" layoutX="115.0" layoutY="84.0" />
-                        <PasswordField fx:id="Pass1" layoutX="115.0" layoutY="122.0" />
                         <Hyperlink fx:id="forget1" layoutX="63.0" layoutY="173.0" onAction="#forgotPass1" text="Forgot Username/Password?" />
                         <Label layoutX="106.0" layoutY="40.0" prefHeight="18.0" prefWidth="121.0" />
                         <JFXButton fx:id="LoginStu" layoutX="120.0" layoutY="216.0" onAction="#StudentMainScreen" text="Login" />
+                        <JFXTextField layoutX="106.0" layoutY="83.0" prefHeight="26.0" prefWidth="190.0" />
+                        <JFXTextField layoutX="106.0" layoutY="115.0" prefHeight="26.0" prefWidth="190.0" />
                      </children>
                   </AnchorPane>
             </content>
@@ -35,11 +33,11 @@
                      <children>
                         <Label layoutX="7.0" layoutY="88.0" text="Email/Username:" />
                         <Label layoutX="44.0" layoutY="126.0" text="Password:" />
-                        <TextField fx:id="User2" layoutX="115.0" layoutY="84.0" />
-                        <PasswordField fx:id="Pass2" layoutX="115.0" layoutY="122.0" />
                         <Hyperlink fx:id="forget2" layoutX="63.0" layoutY="173.0" onAction="#forgotPass2" text="Forgot Username/Password?" />
                         <Label layoutX="106.0" layoutY="40.0" prefHeight="18.0" prefWidth="121.0" />
                         <JFXButton fx:id="LoginOrg" layoutX="120.0" layoutY="216.0" onAction="#OrganiserMainScreen" text="Login" />
+                        <JFXTextField layoutX="107.0" layoutY="83.0" prefHeight="26.0" prefWidth="190.0" />
+                        <JFXTextField layoutX="107.0" layoutY="122.0" prefHeight="26.0" prefWidth="190.0" />
                      </children>
                   </AnchorPane>
             </content>
