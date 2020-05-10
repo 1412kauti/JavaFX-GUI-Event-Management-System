@@ -145,7 +145,7 @@ public class Controller {
         Stage primaryStage = new Stage();
         Parent root1 = FXMLLoader.load(getClass().getResource("/application/FXML/Common/SignIn.fxml"));
         Scene scene = new Scene(root1, 300, 300);
-        scene.getStylesheets().add("/application/CSS/SignIn.css");
+        scene.getStylesheets().add("/application/CSS/Style.css");
                     primaryStage.setScene(scene);
             primaryStage.maximizedProperty().addListener((observable, oldValue, newValue) -> {
                 if (newValue)
