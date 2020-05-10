@@ -109,5 +109,8 @@ All subclasses of the JavaFXApplication class must implement the abstract *start
 
 The *start()* method takes a single parameter of the type **Stage** . The stage is where all the visual parts of the JavaFX application are displayed. The Stage object is created by default by the JavaFX runtime.
 
+In a New FXML File (which is named StartSceen.fxml in this case). The code follows a similar tone to HTML, wherein the scene is interpreted as an **AnchorPane** and all its contents are enclosed .
+
+Within the AnchorPane, 2 Buttons have been created for SignIn and Signup 
 
 
