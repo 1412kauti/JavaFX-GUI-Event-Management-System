@@ -253,6 +253,7 @@ At the end of the class, The Button Movie1 is assigned to open BookingMovie1.fxm
 
 While opening this new Stage, it should not close the existing stage, which is why the **.close()** option is excluded.
 
+![](/Screenshots/2.png)
 
 
 
