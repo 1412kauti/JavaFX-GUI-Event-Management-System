@@ -1,4 +1,4 @@
-package application;
+package application.Classes;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

@@ -6,7 +6,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="rootPane" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane fx:id="rootPane" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Classes.Controller">
    <children>
       <Label layoutX="27.0" layoutY="51.0" text="Choose Application-Wide Language: " />
       <MenuButton layoutX="76.0" layoutY="113.0" mnemonicParsing="false" text="MenuButton">
