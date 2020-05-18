@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
@@ -8,7 +9,6 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<?import com.jfoenix.controls.JFXPasswordField?>
 <AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Classes.Controller">
    <children>
       <TabPane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE">
@@ -19,7 +19,7 @@
                      <children>
                         <Label layoutX="7.0" layoutY="88.0" text="Email/Username:" />
                         <Label layoutX="44.0" layoutY="126.0" text="Password:" />
-                        <Hyperlink fx:id="forget1" layoutX="63.0" layoutY="173.0" onAction="#forgotPass1" text="Forgot Username/Password?" />
+                        <Hyperlink fx:id="forget1" layoutX="91.0" layoutY="171.0" onAction="#forgotPass1" text="Forgot Password?" />
                         <Label layoutX="106.0" layoutY="40.0" prefHeight="18.0" prefWidth="121.0" />
                         <JFXButton fx:id="LoginStu" layoutX="120.0" layoutY="216.0" onAction="#StudentMainScreen" text="Login" />
                         <JFXTextField layoutX="106.0" layoutY="83.0" prefHeight="26.0" prefWidth="190.0" />
@@ -34,7 +34,7 @@
                      <children>
                         <Label layoutX="7.0" layoutY="88.0" text="Email/Username:" />
                         <Label layoutX="44.0" layoutY="126.0" text="Password:" />
-                        <Hyperlink fx:id="forget2" layoutX="63.0" layoutY="173.0" onAction="#forgotPass2" text="Forgot Username/Password?" />
+                        <Hyperlink fx:id="forget2" layoutX="91.0" layoutY="171.0" onAction="#forgotPass2" text="Forgot Password?" />
                         <Label layoutX="106.0" layoutY="40.0" prefHeight="18.0" prefWidth="121.0" />
                         <JFXButton fx:id="LoginOrg" layoutX="120.0" layoutY="216.0" onAction="#OrganiserMainScreen" text="Login" />
                         <JFXTextField layoutX="107.0" layoutY="83.0" prefHeight="26.0" prefWidth="190.0" />
